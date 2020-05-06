@@ -12,6 +12,7 @@ int main() {
     int listSize = 10;
     string** example = new string*[size];
     for (int i = 0; i < size; i++) {
+        //This is making a list of lists, at each index i we have listSize number of strings
         example[i] = new string[listSize];
         for (int j = 0; j < listSize; j++) {
             example[i][j] = to_string(i) + "," + to_string(j);
